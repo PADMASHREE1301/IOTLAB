@@ -1,0 +1,10 @@
+OUTPUT: 
+•  Serial Monitor displays the light sensor readings continuously every second. 
+•  The values vary depending on the amount of light falling on the LDR sensor. 
+•  Lower values correspond to less light (darker), and higher values correspond to more light. 
+Light Sensor Reading: 
+LDR Value: 450 
+LDR Value: 460 
+LDR Value: 700 
+LDR Value: 800 
+LDR Value: 300 
