@@ -1,0 +1,19 @@
+
+OUTPUT: 
+ 
+•  Arduino connects successfully to the WiFi network. 
+•  HTTP GET request is sent to the server every 10 seconds. 
+•  Server response is received and printed on the Serial Monitor. 
+•  Sample output on Serial Monitor: 
+Connecting to WiFi... 
+.......... 
+WiFi connected 
+IP address: 
+192.168.1.10 
+HTTP Response code: 200 
+Response: { 
+  "args": { 
+    "data": "HelloArduino" 
+  }, 
+  ... 
+} 
