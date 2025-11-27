@@ -1,0 +1,9 @@
+ 
+OUTPUT: 
+ 
+ •  The LED connected to Raspberry Pi GPIO pin 17 blinks ON and OFF repeatedly in one-second intervals. 
+•  The LED lights up for 1 second, then turns off for 1 second, continuously until the program is stopped. 
+•  When the program is interrupted (Ctrl+C), the LED stops blinking and the GPIO pins are reset safely. 
+ 
+ 
+ Program stopped
