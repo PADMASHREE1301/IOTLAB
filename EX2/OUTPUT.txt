@@ -1,0 +1,8 @@
+• Serial Monitor displays temperature in °C, light sensor analog value, and IR sensor digital value. 
+• LED turns ON when light intensity is low (dark environment). 
+• Buzzer sounds when the infrared sensor detects an object (IR sensor output HIGH). 
+ yaml 
+ 
+ Temperature: 26.00 °C, Light: 150, IR Sensor: 1 
+ Temperature: 26.50 °C, Light: 450, IR Sensor: 0 
+ Temperature: 27.00 °C, Light: 100, IR Sensor: 1 

@@ -1,0 +1,28 @@
+#include <DHT.h>
+
+DHT dht(2, DHT22);
+
+void setup() {
+  Serial.begin(9600);
+  dht.begin();
+  pinMode(3, INPUT);
+  pinMode(13, OUTPUT);
+}
+
+void loop() {
+  float temp = dht.readTemperature();
+  int light = analogRead(A0);
+  int ir = digitalRead(3);
+
+  Serial.print("Temp: ");
+  Serial.print(temp);
+  Serial.print(", Light: ");
+  Serial.print(light);
+  Serial.print(", IR: ");
+  Serial.println(ir);
+
+  digitalWrite(13, ir);
+
+  delay(2000);
+}
+	
