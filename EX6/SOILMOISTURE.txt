@@ -1,0 +1,27 @@
+#include <WiFi.h>
+#include <HTTPClient.h>
+
+const char* ssid = "Wokwi-GUEST";
+const char* pass = "";
+
+String firebaseURL = "https://YOUR_PROJECT_ID.firebaseio.com/soil.json?auth=YOUR_KEY";
+
+int soilPin = 34;
+
+void setup() {
+  Serial.begin(115200);
+  WiFi.begin(ssid, pass);
+  while (WiFi.status() != WL_CONNECTED) { delay(100); }
+}
+
+void loop() {
+  int value = analogRead(soilPin);
+
+  HTTPClient http;
+  http.begin(firebaseURL);
+  http.addHeader("Content-Type", "application/json");
+  http.PUT(String("{\"value\":") + value + "}");
+  http.end();
+
+  delay(2000);
+}

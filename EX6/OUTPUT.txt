@@ -1,0 +1,16 @@
+OUTPUT: 
+ 
+ 
+•  Serial Monitor shows WiFi connection status. 
+•  Displays soil moisture sensor analog readings every 20 seconds. 
+•  Confirms successful data posting to Firebase or shows error messages. 
+•  Soil moisture data updates in real-time on the Firebase console under /soilMoisture. 
+ 
+   
+ Connecting to WiFi... 
+ .......... 
+ Connected to WiFi 
+ Soil Moisture Value: 540 
+ Firebase updated successfully 
+ Soil Moisture Value: 520 
+ Firebase updated successfully 
